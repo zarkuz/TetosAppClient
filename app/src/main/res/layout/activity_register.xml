@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <EditText
+        android:id="@+id/et_nik"
+        style="@style/viewCustom"
+        android:ems="10"
+        android:hint="NIK"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/et_nama"
+        style="@style/viewCustom"
+        android:layout_below="@id/et_nik"
+        android:ems="10"
+        android:hint="Nama Lengkap"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/et_jenisk"
+        style="@style/viewCustom"
+        android:layout_below="@id/et_nama"
+        android:ems="10"
+        android:hint="Jenis Kelamin"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/et_alamat"
+        style="@style/viewCustom"
+        android:layout_below="@id/et_jenisk"
+        android:ems="10"
+        android:hint="Alamat"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/et_email"
+        style="@style/viewCustom"
+        android:ems="10"
+        android:layout_below="@id/et_alamat"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/viewCustom"
+        android:layout_below="@id/et_email"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/viewCustom"
+        android:layout_below="@id/et_password"
+        android:background="@color/colorAccent"
+        android:text="@string/create_act"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</RelativeLayout>
